@@ -1,0 +1,152 @@
+body {
+    padding: 30px 60px 30px 60px;
+    font-family: Helvetica, sans-serif;
+    background: rgb(13,121,9);
+    background: linear-gradient(107deg, rgba(13,121,9,1) 5%, rgba(9,121,73,1) 42%, rgba(0,255,196,1) 75%, rgba(0,172,255,1) 95%);   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .navbar {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav .navbar li {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-color:#f2c111;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+nav .navbar li:nth-child(even) {
+    margin: auto 10px;   
+}
+
+.hero-section {
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas:
+        "hero hero pricetop"
+        "hero hero pricebot";
+    grid-gap: 15px;
+}
+
+.hero {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-area: hero;
+    min-height: 400px;
+    background: url("https://www.vvsupremo.com/wp-content/uploads/2019/01/Campechano-Tacos.jpg");
+    background-size: cover;
+    background-position: bottom right;
+    justify-content: center;
+    align-items: start;
+}
+
+.hero > * {
+    background-color: #f2c111;
+    padding: 5px;
+  }
+
+.price {
+    background-color: #f2c111;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.price p {
+    margin: 0;
+}
+
+.pricetop {
+    grid-area: pricetop;
+}
+
+.pricebot {
+    grid-area: pricebot;
+}
+
+.big-price {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.features {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.feature:nth-child(3) {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+.feature .icon {
+    font-size: 50px;
+}
+
+.feature p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    background: white;
+    padding: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery h2 {
+    grid-column: 1 / -1;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;    
+}
